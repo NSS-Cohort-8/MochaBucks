@@ -31,7 +31,7 @@ describe('Constructor', function () {
     it('should return "Hello World"', function () {
       var constructed = new Constructor();
       expect(constructed.publicMethod()).to.equal('Hello World');
-      expect(constructed.hasOwnProperty('publicMethod')).to.be.true;
+      expect(constructed.hasOwnProperty('publicMethod')).to.be.false;
     });
   });
 });
