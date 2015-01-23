@@ -19,5 +19,9 @@ describe('Constructor', function () {
       var constructed = new Constructor();
       expect(constructed.publicVariable).to.equal('foo');
     });
+    it('should accept an argument', function () {
+      var constructed = new Constructor('bar');
+      expect(constructed.publicVariable).to.equal('bar');
+    });
   });
 });
