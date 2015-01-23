@@ -20,8 +20,11 @@ describe('Constructor', function () {
       expect(constructed.publicVariable).to.equal('foo');
     });
     it('should accept an argument', function () {
-      var constructed = new Constructor('bar');
-      expect(constructed.publicVariable).to.equal('bar');
+      var barConstructed = new Constructor('bar'),
+          bazConstructed = new Constructor('baz');
+
+      expect(barConstructed.publicVariable).to.equal('bar');
+      expect(bazConstructed.publicVariable).to.equal('baz');
     });
   });
 });
