@@ -27,4 +27,11 @@ describe('Constructor', function () {
       expect(bazConstructed.publicVariable).to.equal('baz');
     });
   });
+  describe('#publicMethod', function () {
+    it('should return "Hello World"', function () {
+      var constructed = new Constructor();
+      expect(constructed.publicMethod()).to.equal('Hello World');
+      expect(constructed.hasOwnProperty('publicMethod')).to.be.true;
+    });
+  });
 });
