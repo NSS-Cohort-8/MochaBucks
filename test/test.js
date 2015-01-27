@@ -1,5 +1,4 @@
-/* global describe, it */
-/* jshint expr: true */
+/* jshint mocha: true, expr: true */
 
 'use strict';
 
